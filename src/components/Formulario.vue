@@ -47,11 +47,14 @@
         <div class="item">
             <label for="tipografia">Tipografía</label>
             <select v-model="formulario.tipografia" @change="emitData">
-                <option desabled value="">Selecione una opcion</option>
-                <option value="normal">Normal</option>
-                <option value="italic">Cursiva</option>
-                <option value="oblique">Oblicua</option>
+                <option disabled value="">Seleccione una opción</option>
+                <option value="Arial">Arial</option>
+                <option value="Cursive">Cursive</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="Trebuchet MS">Trebuchet MS</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
             </select>
+            
         </div>
         <div class="item-check">
             <label for="opacidad">Opaco</label>

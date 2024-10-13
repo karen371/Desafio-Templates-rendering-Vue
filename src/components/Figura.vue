@@ -21,16 +21,16 @@
 </script>
 <template>
     <div :class="['figura', { 'transparente': datos.opacidad }]" :style="{backgroundColor: datos.colorFondo, borderRadius: datos.borde + 'px'}">
-        <p v-if="datos.size === 'Pequeño'" class="pequeño" :style="{ color: datos.colorText, fontStyle: datos.tipografia}" v-show="datos.mostrarTexto"  >
+        <p v-if="datos.size === 'Pequeño'" class="pequeño" :style="{ color: datos.colorText, fontFamily: datos.tipografia}" v-show="datos.mostrarTexto"  >
             {{ datos.contenido }}
         </p>
-        <p  v-else-if="datos.size === 'Mediano'" class="mediano" :style="{ color: datos.colorText, fontStyle: datos.tipografia }" v-show="datos.mostrarTexto">
+        <p  v-else-if="datos.size === 'Mediano'" class="mediano" :style="{ color: datos.colorText, fontFamily: datos.tipografia }" v-show="datos.mostrarTexto">
             {{ datos.contenido }}
         </p>
-        <p  v-else-if="datos.size === 'Grande'" class="grande" :style="{ color: datos.colorText , fontStyle: datos.tipografia }" v-show="datos.mostrarTexto">
+        <p  v-else-if="datos.size === 'Grande'" class="grande" :style="{ color: datos.colorText , fontFamily: datos.tipografia }" v-show="datos.mostrarTexto">
             {{ datos.contenido }}
         </p>
-        <p v-else :style="{ color: datos.colorText, fontStyle: datos.tipografia }" v-show="datos.mostrarTexto">
+        <p v-else :style="{ color: datos.colorText, fontFamily: datos.tipografia }" v-show="datos.mostrarTexto">
             {{ datos.contenido }}
         </p>
     </div>
